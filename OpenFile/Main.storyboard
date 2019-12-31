@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="aEL-cd-GgZ">
+            <objects>
+                <application id="Wr9-Qd-0k4" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="OpenFile" systemMenu="main" id="hcE-WA-Ble">
+                        <items>
+                            <menuItem title="OpenFile" id="xvV-Uv-buJ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="OpenFile" id="lim-Eb-ruY">
+                                    <items>
+                                        <menuItem title="Quit" keyEquivalent="q" id="lgc-UU-dMM">
+                                            <connections>
+                                                <action selector="terminate:" target="EsK-B0-G6M" id="9QN-u9-ueM"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Window" id="Q9I-af-qfo">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Window" id="rpY-N5-Pbq">
+                                    <items>
+                                        <menuItem title="Close" keyEquivalent="w" id="Dgv-cE-hcQ">
+                                            <connections>
+                                                <action selector="performClose:" target="EsK-B0-G6M" id="ikD-IJ-WBf"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="MCA-bW-6Lk" id="Bnt-Hg-22j"/>
+                    </connections>
+                </application>
+                <customObject id="EsK-B0-G6M" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="MCA-bW-6Lk" customClass="AppDelegate" customModule="OpenFile" customModuleProvider="target"/>
+                <customObject id="Yce-kf-bHH" customClass="NSFontManager"/>
+                <customObject id="Wbg-Gb-Ihh" customClass="HmStatusBarItem" customModule="OpenFile" customModuleProvider="target">
+                    <connections>
+                        <outlet property="statusMenu" destination="qWY-tW-89H" id="tF6-v0-l7p"/>
+                    </connections>
+                </customObject>
+                <menu id="qWY-tW-89H">
+                    <items>
+                        <menuItem title="偏好设置" keyEquivalent="，" id="rMY-48-dQ6">
+                            <connections>
+                                <action selector="openPreferencesWindow:" target="Wbg-Gb-Ihh" id="9ec-Ms-gDD"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="清空已添加" keyEquivalent="c" id="EuT-bM-8wF">
+                            <connections>
+                                <action selector="clearAddedFile:" target="Wbg-Gb-Ihh" id="4Gt-qt-ItK"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="jCa-jD-TvC"/>
+                        <menuItem title="退出" keyEquivalent="q" id="GMy-nS-wuu">
+                            <connections>
+                                <action selector="exitApp:" target="Wbg-Gb-Ihh" id="oHN-Uw-7CI"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+    </scenes>
+</document>

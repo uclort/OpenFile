@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="HmMainCollectionItem" customModule="OpenFile" customModuleProvider="target">
+            <connections>
+                <outlet property="fileIcon" destination="AlK-bA-Osy" id="OnF-QX-wyT"/>
+                <outlet property="fileName" destination="muh-tZ-PZe" id="44n-K3-LC1"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView canDrawConcurrently="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AlK-bA-Osy">
+                    <rect key="frame" x="10" y="20" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="8Et-Hm-rxk"/>
+                        <constraint firstAttribute="height" constant="80" id="OmD-bd-pOf"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="cut-YD-5rT"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="muh-tZ-PZe" customClass="HmLabel" customModule="OpenFile" customModuleProvider="target">
+                    <rect key="frame" x="8" y="0.0" width="84" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="JGr-xb-t6Y"/>
+                        <constraint firstAttribute="width" constant="80" id="mpm-vV-TCn"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" id="9c8-rp-LCf" customClass="VerticalCenteringCell" customModule="OpenFile" customModuleProvider="target">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="muh-tZ-PZe" firstAttribute="centerX" secondItem="AlK-bA-Osy" secondAttribute="centerX" id="SNP-xB-Axj"/>
+                <constraint firstItem="AlK-bA-Osy" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="nxL-Pz-KmU"/>
+                <constraint firstItem="muh-tZ-PZe" firstAttribute="top" secondItem="AlK-bA-Osy" secondAttribute="bottom" id="raX-k5-Kbi"/>
+                <constraint firstItem="AlK-bA-Osy" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="t1Y-YF-Chs"/>
+            </constraints>
+            <point key="canvasLocation" x="648.5" y="378.5"/>
+        </customView>
+    </objects>
+</document>
