@@ -163,7 +163,11 @@ extension HmMainWindowContentViewController: NSCollectionViewDelegate {
     func collectionView(_ collectionView: NSCollectionView, acceptDrop draggingInfo: NSDraggingInfo, indexPath: IndexPath, dropOperation: NSCollectionView.DropOperation) -> Bool {
         if indexPathsOfItemsBeingDragged.isEmpty {
             UserDefaults.insertFilePaths(urls: draggingInfo.filePaths, insertIndex: indexPath.item)
-            collectionView.animator().insertItems(at: draggingInfo.filePaths.generateIndexPaths(initialItem: indexPath.item))
+            collectionView.animator().performBatchUpdates({
+                collectionView.insertItems(at: draggingInfo.filePaths.generateIndexPaths(initialItem: indexPath.item))
+            }) { (stop) in
+                collectionView.reloadData()
+            }
         } else {
             let indexPathOfFirstItemBeingDragged = indexPathsOfItemsBeingDragged.first!
             var toIndexPath: IndexPath
@@ -173,7 +177,11 @@ extension HmMainWindowContentViewController: NSCollectionViewDelegate {
                 toIndexPath = IndexPath(item: indexPath.item, section: indexPath.section)
             }
             UserDefaults.moveFilePath(index: indexPathOfFirstItemBeingDragged.item, to: toIndexPath.item)
-            collectionView.animator().moveItem(at: indexPathOfFirstItemBeingDragged, to: toIndexPath)
+            collectionView.animator().performBatchUpdates({
+                collectionView.moveItem(at: indexPathOfFirstItemBeingDragged, to: toIndexPath)
+            }) { (stop) in
+                collectionView.reloadData()
+            }
         }
         return true
     }
