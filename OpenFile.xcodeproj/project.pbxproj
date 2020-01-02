@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B104F1A23BDB2D400748A06 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B104F1923BDB2D400748A06 /* Regex.swift */; };
 		4B3602BD23B58DF100DE09EE /* HmPreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3602BC23B58DF100DE09EE /* HmPreferencesWindowController.swift */; };
 		4B3602BF23B58E0200DE09EE /* HmPreferencesContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3602BE23B58E0200DE09EE /* HmPreferencesContentViewController.swift */; };
 		4B7252B723B5D48E0033D65A /* HmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7252B623B5D48E0033D65A /* HmButton.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		017931C339AC9B337BB11CA7 /* Pods-OpenFile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFile.debug.xcconfig"; path = "Target Support Files/Pods-OpenFile/Pods-OpenFile.debug.xcconfig"; sourceTree = "<group>"; };
+		4B104F1923BDB2D400748A06 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		4B3602BC23B58DF100DE09EE /* HmPreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmPreferencesWindowController.swift; sourceTree = "<group>"; };
 		4B3602BE23B58E0200DE09EE /* HmPreferencesContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmPreferencesContentViewController.swift; sourceTree = "<group>"; };
 		4B7252B623B5D48E0033D65A /* HmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmButton.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				4B9D38F923B2F33C0075062A /* HmTool.swift */,
+				4B104F1923BDB2D400748A06 /* Regex.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				4BDAB42A23B4857D00EB391F /* DataExtension.swift in Sources */,
 				4B9D38BD23B05ECE0075062A /* StringExtension.swift in Sources */,
 				4B9D390423B33AED0075062A /* HmMainDragDropView.swift in Sources */,
+				4B104F1A23BDB2D400748A06 /* Regex.swift in Sources */,
 				4BDAB42E23B497CF00EB391F /* HmFileItemDetailContentViewController.swift in Sources */,
 				4B9D38BB23B05CE10075062A /* ArrayExtension.swift in Sources */,
 				4B9D38F423B2EE7C0075062A /* HmMainWindowController.swift in Sources */,
@@ -521,7 +525,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = houmeng.OpenFile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -544,7 +548,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = houmeng.OpenFile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
