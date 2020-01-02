@@ -28,10 +28,14 @@ class HmMainCollectionItem: NSCollectionViewItem {
     
     var indexPathIndex: Int!
     
+    let regex = try! Regex(#"^.*?\.(gif|png|jpg|jpeg|webp|svg|psd|bmp|tif)$"#)
+    
     // 已经点击下去 未抬起来
     private var isClicking: Bool = false
     // 已经和鼠标重合
     private var isAlreadyCoincide: Bool = false
+    
+    private var imageType: [String] = ["gif", "png" ,"jpg" ,"jpeg" ,"webp" ,"svg" ,"psd" ,"bmp", "tif"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,8 +68,14 @@ class HmMainCollectionItem: NSCollectionViewItem {
     func setFilePath(model: HmMainFileModel) {
         self.itemModel = model
         fileName.stringValue = model.showName
-        fileIcon.image = NSWorkspace.shared.icon(forFile: model.path)
         fileIcon.alphaValue = 1
+        
+        if regex.matches(model.path) {
+            fileIcon.image = NSImage(contentsOfFile: model.path)
+        }else{
+            fileIcon.image = NSWorkspace.shared.icon(forFile: model.path)
+        }
+        
     }
     
     override func mouseDown(with event: NSEvent) {

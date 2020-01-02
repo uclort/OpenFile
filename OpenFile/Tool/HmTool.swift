@@ -15,6 +15,11 @@ func ContentStoryboard<T>(Identifier: AnyClass) -> T {
 }
 
 var isDarkMode: Bool {
-    let apperance = NSApp.effectiveAppearance
-    return apperance.bestMatch(from: [.darkAqua, .aqua]) == .darkAqua
+    if #available(OSX 10.14, *) {
+        let apperance = NSApp.effectiveAppearance
+        return apperance.bestMatch(from: [.darkAqua, .aqua]) == .darkAqua
+    } else {
+        // Fallback on earlier versions
+        return false
+    }
 }
