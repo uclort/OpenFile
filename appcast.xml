@@ -16,7 +16,6 @@
 			<enclosure
 				url="https://github.com/nlnlnull/OpenFile/releases/download/V1.3/OpenFile.zip"
 				sparkle:version="1.3"
-				sparkle:shortVersionString="1"
 				type="application/octet-stream"
 				sparkle:edSignature="93TBKOEVvcGwDBrA6u8Vb2s3HzJAla4x77kwSYWn5WhXVzClyotg123Ddmg/sEqmXUGgrtP+lLOfPQJs3ahKDA==" 
 				length="6074753"
