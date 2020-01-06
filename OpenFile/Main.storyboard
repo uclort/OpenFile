@@ -49,6 +49,7 @@
                         <outlet property="statusMenu" destination="qWY-tW-89H" id="tF6-v0-l7p"/>
                     </connections>
                 </customObject>
+                <customObject id="uN7-1I-SGm" customClass="SUUpdater"/>
                 <menu id="qWY-tW-89H">
                     <items>
                         <menuItem title="偏好设置" keyEquivalent="，" id="rMY-48-dQ6">
@@ -59,6 +60,12 @@
                         <menuItem title="清空已添加" keyEquivalent="c" id="EuT-bM-8wF">
                             <connections>
                                 <action selector="clearAddedFile:" target="Wbg-Gb-Ihh" id="4Gt-qt-ItK"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="检查更新" id="E6t-Wu-t9V">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="checkForUpdates:" target="uN7-1I-SGm" id="leL-FV-C93"/>
                             </connections>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="jCa-jD-TvC"/>

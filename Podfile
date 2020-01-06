@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :osx, '10.13'
 source 'https://cdn.cocoapods.org/'
 install! 'cocoapods', :generate_multiple_pod_projects => true
 target 'OpenFile' do
@@ -8,6 +8,7 @@ target 'OpenFile' do
   pod 'SnapKit'
   pod 'MASShortcut'
   pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
+  pod 'Sparkle'
   # Pods for OpenFile
 
 end

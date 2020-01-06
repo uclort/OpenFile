@@ -17,8 +17,6 @@ class HmMainWindowController: NSWindowController {
     func show(button: NSButton?) {
         
         guard let button = button, let buttonWindow = button.window, let window = self.window else { return }
-        showWindow(button)
-        window.makeKeyAndOrderFront(self)
         let frameOrigin = buttonWindow.frame.origin
         
         let screenWidth = NSScreen.main?.frame.width ?? 0
@@ -33,7 +31,6 @@ class HmMainWindowController: NSWindowController {
         if right > screenMaxX {
             left = left - ((right - screenMaxX) + 10)
         } else if left < screenMinX {
-//            left = screenMinX + 10
             left = screenMaxX - window.frame.width - 10
         }
         
@@ -41,5 +38,8 @@ class HmMainWindowController: NSWindowController {
         let yourPoint = CGPoint(x: left, y: top)
         window.setFrameOrigin(yourPoint)
         NSApp.activate(ignoringOtherApps: true)
+        showWindow(NSScreen.main)
+        window.makeKeyAndOrderFront(NSScreen.main)
+        
     }
 }
