@@ -15,7 +15,7 @@
 			<pubDate>Mon, 06 Jan 2020 05:35:40 +0000</pubDate>
 			<enclosure
 				   url="https://github.com/nlnlnull/OpenFile/releases/download/V1.3/OpenFile.zip"
-				   sparkle:shortVersionString="V1.3"
+				   sparkle:version="V1.3"
 				   type="application/octet-stream"
 				   sparkle:edSignature="93TBKOEVvcGwDBrA6u8Vb2s3HzJAla4x77kwSYWn5WhXVzClyotg123Ddmg/sEqmXUGgrtP+lLOfPQJs3ahKDA==" 
 				   length="6074753"
@@ -30,7 +30,7 @@
 			<pubDate>Thu, 02 Jan 2020 05:21:57 +0000</pubDate>
 			<enclosure
 				   url="https://github.com/nlnlnull/OpenFile/releases/download/V1.2/OpenFile.zip"
-				   sparkle:shortVersionString="V1.2"
+				   sparkle:version="V1.2"
 				   type="application/octet-stream"
 			/>
 		</item><item>
@@ -40,7 +40,7 @@
 			<pubDate>Tue, 31 Dec 2019 06:14:45 +0000</pubDate>
 			<enclosure
 				   url="https://github.com/nlnlnull/OpenFile/releases/download/V1.1/OpenFile.zip"
-				   sparkle:shortVersionString="V1.1"
+				   sparkle:version="V1.1"
 				   type="application/octet-stream"
 			/>
 		</item><item>
@@ -50,7 +50,7 @@
 			<pubDate>Tue, 31 Dec 2019 02:05:17 +0000</pubDate>
 			<enclosure
 				   url="https://github.com/nlnlnull/OpenFile/releases/download/V1.0/OpenFile.zip"
-				   sparkle:shortVersionString="V1.0"
+				   sparkle:version="V1.0"
 				   type="application/octet-stream"
 			/>
 		</item>
