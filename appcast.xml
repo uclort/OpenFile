@@ -8,7 +8,8 @@
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
             <enclosure
             url="https://github.com/nlnlnull/OpenFile/releases/download/V1.2/OpenFile.zip"
-            sparkle:version="1.2"
+            sparkle:version="1"
+            sparkle:shortVersionString="1.2"
             type="application/octet-stream"/>
         </item>
     </channel>
