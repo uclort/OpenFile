@@ -7,9 +7,8 @@
             <pubDate>周一, 06 1月 2020 10:44:09 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
             <enclosure
-            url="OpenFile.zip"
-            sparkle:version="1"
-            length="6074788"
+            url="https://github.com/nlnlnull/OpenFile/releases/download/V1.2/OpenFile.zip"
+            sparkle:version="1.2"
             type="application/octet-stream"/>
         </item>
     </channel>
