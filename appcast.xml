@@ -6,6 +6,21 @@
 		<description>Most recent changes with links to updates.</description>
 		<language>cn</language>
 		<item>
+			<title>V1.3</title>
+			<description><![CDATA[<ul>
+  <li>修复（可能）在外接显示器偶尔显示不出来的 Bug.</li>
+  <li>接入 Sparkle 更新。</li>
+</ul>
+]]></description>
+			<pubDate>Mon, 06 Jan 2020 05:35:40 +0000</pubDate>
+			<enclosure
+				url="https://github.com/nlnlnull/OpenFile/releases/download/V1.3/OpenFile.zip"
+				sparkle:version="20200106"
+				sparkle:shortVersionString="V1.3"
+				type="application/octet-stream"
+			/>
+		</item><item>
+		<item>
 			<title></title>
 			<description><![CDATA[<ul>
   <li>图片文件直接显示预览。</li>
