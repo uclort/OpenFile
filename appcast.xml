@@ -1,34 +1,48 @@
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
-<channel>
-<title>OpenFile ChangeLog</title>
-<link>https://github.com/nlnlnull/OpenFile</link>
-<description>Most recent changes with links to updates.</description>
-<language>cn</language>
-<item>
-<title/>
-<description>
-<![CDATA[
-<ul> <li>图片文件直接显示预览。</li> <li>最低运行版本修改为 10.13。</li> </ul>
-]]>
-</description>
-<pubDate>Thu, 02 Jan 2020 05:21:57 +0000</pubDate>
-<enclosure url="https://github.com/nlnlnull/OpenFile/releases/download/V1.2/OpenFile.zip" sparkle:version="20200102" sparkle:shortVersionString="V1.2" type="application/octet-stream"/>
-</item>
-<item>
-<title/>
-<description>
-<![CDATA[ <p>修复拖动 item 重新排序后，右键删除的不是指定 item 的问题，</p> ]]>
-</description>
-<pubDate>Tue, 31 Dec 2019 06:14:45 +0000</pubDate>
-<enclosure url="https://github.com/nlnlnull/OpenFile/releases/download/V1.1/OpenFile.zip" sparkle:version="20191231" sparkle:shortVersionString="V1.1" type="application/octet-stream"/>
-</item>
-<item>
-<title/>
-<description>
-<![CDATA[ <p>1.0 版本完成，基础功能完善</p> ]]>
-</description>
-<pubDate>Tue, 31 Dec 2019 02:05:17 +0000</pubDate>
-<enclosure url="https://github.com/nlnlnull/OpenFile/releases/download/V1.0/OpenFile.zip" sparkle:version="20191231" sparkle:shortVersionString="V1.0" type="application/octet-stream"/>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>OpenFile ChangeLog</title>
+		<link>https://github.com/nlnlnull/OpenFile</link>
+		<description>Most recent changes with links to updates.</description>
+		<language>cn</language>
+		<item>
+			<title></title>
+			<description><![CDATA[<ul>
+  <li>图片文件直接显示预览。</li>
+  <li>最低运行版本修改为 10.13。</li>
+</ul>
+]]></description>
+			<pubDate>Thu, 02 Jan 2020 05:21:57 +0000</pubDate>
+			<enclosure
+				url="https://github.com/nlnlnull/OpenFile/releases/download/V1.2/OpenFile.zip"
+				sparkle:version="20200102"
+				sparkle:shortVersionString="V1.2"
+				type="application/octet-stream"
+        sparkle:edSignature="oAMrGYZpjqqnOGiLxSLxCFyO1YbTBWluljZvifpp5GqCrrVINa/h8Qfxut3MhQ9BQnaDGNh9/4H8k9834EoFCA=="      
+			/>
+		</item><item>
+			<title></title>
+			<description><![CDATA[<p>修复拖动 item 重新排序后，右键删除的不是指定 item 的问题，</p>
+]]></description>
+			<pubDate>Tue, 31 Dec 2019 06:14:45 +0000</pubDate>
+			<enclosure
+				url="https://github.com/nlnlnull/OpenFile/releases/download/V1.1/OpenFile.zip"
+				sparkle:version="20191231"
+				sparkle:shortVersionString="V1.1"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title></title>
+			<description><![CDATA[<p>1.0 版本完成，基础功能完善</p>
+]]></description>
+			<pubDate>Tue, 31 Dec 2019 02:05:17 +0000</pubDate>
+			<enclosure
+				url="https://github.com/nlnlnull/OpenFile/releases/download/V1.0/OpenFile.zip"
+				sparkle:version="20191231"
+				sparkle:shortVersionString="V1.0"
+				type="application/octet-stream"
+			/>
+		</item>
+	</channel>
 </rss>
+
