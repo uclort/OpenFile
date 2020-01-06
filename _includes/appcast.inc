@@ -15,7 +15,7 @@
 			<enclosure
 				url="https://github.com/nlnlnull/OpenFile/releases/download/{{ release.tag_name }}/OpenFile.zip"
 				sparkle:version="{{ release.name }}"
-				sparkle:shortVersionString="1"
+				sparkle:shortVersionString="{{ release.name }}"
 				type="application/octet-stream"
 			/>
 		</item>
