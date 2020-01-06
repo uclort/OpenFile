@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>OpenFile</title>
+        <item>
+            <title>1.2</title>
+            <pubDate>周一, 06 1月 2020 10:44:09 +0800</pubDate>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <enclosure
+            url="OpenFile.zip"
+            sparkle:version="1"
+            length="6074788"
+            type="application/octet-stream"/>
+        </item>
+    </channel>
+</rss>
