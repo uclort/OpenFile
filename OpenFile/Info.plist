@@ -2,12 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SUFeedURL</key>
-	<string>https://nlnlnull.github.io/OpenFile/appcast.xml</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>SUPublicEDKey</key>
-	<string>mlAnWwD5PcINpVSLEZi/qImGtO2k7h5x/JAKwRgyDyA=</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIconFile</key>
@@ -42,5 +38,9 @@
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+	<key>SUFeedURL</key>
+	<string>https://nlnlnull.github.io/OpenFile/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>mlAnWwD5PcINpVSLEZi/qImGtO2k7h5x/JAKwRgyDyA=</string>
 </dict>
 </plist>
