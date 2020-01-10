@@ -28,14 +28,12 @@ class HmMainCollectionItem: NSCollectionViewItem {
     
     var indexPathIndex: Int!
     
-    let regex = try! Regex(#"^.*?\.(gif|png|jpg|jpeg|webp|svg|psd|bmp|tif)$"#)
+    let regex = try! Regex(#"^.*?\.(gif|png|jpg|jpeg|webp|svg|psd|bmp|tif|pdf)$"#)
     
     // 已经点击下去 未抬起来
     private var isClicking: Bool = false
     // 已经和鼠标重合
     private var isAlreadyCoincide: Bool = false
-    
-    private var imageType: [String] = ["gif", "png" ,"jpg" ,"jpeg" ,"webp" ,"svg" ,"psd" ,"bmp", "tif"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
