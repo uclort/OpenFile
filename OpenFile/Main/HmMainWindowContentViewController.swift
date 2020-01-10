@@ -54,9 +54,6 @@ class HmMainWindowContentViewController: NSViewController {
         view.window?.standardWindowButton(.miniaturizeButton)?.alphaValue = 0
         view.window?.standardWindowButton(.zoomButton)?.alphaValue = 0
         mainCollectionView.reloadData()
-        if view.window?.hidesOnDeactivate == false {
-            view.window?.hidesOnDeactivate = true
-        }
     }
     
     func addSubviewCustom() {
