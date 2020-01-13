@@ -14,7 +14,7 @@
 			<pubDate>{{ release.published_at | date_to_rfc822 }}</pubDate>
 			<enclosure
 				url="https://github.com/nlnlnull/OpenFile/releases/download/{{ release.tag_name }}/OpenFile.zip"
-				sparkle:version="{{ release.name }}"
+				sparkle:version=""
 				sparkle:shortVersionString="{{ release.name }}"
 				type="application/octet-stream"
 			/>
