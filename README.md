@@ -30,3 +30,27 @@
 ## 自定义显示名称
 
 ![](https://raw.githubusercontent.com/nlnlnull/Figurebed/master/customName.gif)
+
+
+
+## 安装（命令行）
+
+1. 首先安装 [brew-tap](https://github.com/Bigwig-Club/homebrew-brew)
+
+   `brew tap bigwig-club/brew`
+
+2. 安装成功后安装 `OpenFile`
+
+   `brew cask install bigwig-club/brew/openfile`
+
+3. 查看 `OpenFile` 信息
+
+   `brew cask info bigwig-club/brew/openfile`
+
+4. 卸载 `OpenFile` 
+
+   `brew cask zap bigwig-club/brew/openfile`
+
+## 安装（手动下载 Zip）
+
+[Releases](https://github.com/nlnlnull/OpenFile/releases)
