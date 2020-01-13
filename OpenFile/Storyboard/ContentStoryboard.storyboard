@@ -14,7 +14,7 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="2214" y="1513" width="480" height="270"/>
+                        <rect key="contentRect" x="2214" y="1509" width="480" height="274"/>
                         <rect key="screenRect" x="1920" y="1200" width="1920" height="1057"/>
                         <connections>
                             <outlet property="delegate" destination="yYk-vw-rNg" id="iYL-Vi-wSo"/>
@@ -26,7 +26,7 @@
                 </windowController>
                 <customObject id="grk-G0-6H7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-327" y="-116"/>
+            <point key="canvasLocation" x="-327" y="-118"/>
         </scene>
         <!--Hm Main Window Content View Controller-->
         <scene sceneID="FVg-Xa-mKC">

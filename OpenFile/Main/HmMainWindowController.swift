@@ -34,12 +34,13 @@ class HmMainWindowController: NSWindowController {
             left = screenMaxX - window.frame.width - 10
         }
         
-        
         let yourPoint = CGPoint(x: left, y: top)
         window.setFrameOrigin(yourPoint)
-        NSApp.activate(ignoringOtherApps: true)
-        showWindow(NSScreen.main)
-        window.makeKeyAndOrderFront(NSScreen.main)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01, execute: {
+            NSApp.activate(ignoringOtherApps: true)
+            self.showWindow(NSScreen.main)
+            self.window?.makeKeyAndOrderFront(NSScreen.main)
+        })
         
     }
 }
