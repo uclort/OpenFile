@@ -43,11 +43,15 @@
 
    `brew cask install bigwig-club/brew/openfile`
 
-3. 查看 `OpenFile` 信息
+3. 更新 `OpenFile`
+
+   `brew cask upgrade bigwig-club/brew/openfile`
+
+4. 查看 `OpenFile` 信息
 
    `brew cask info bigwig-club/brew/openfile`
 
-4. 卸载 `OpenFile` 
+5. 卸载 `OpenFile` 
 
    `brew cask zap bigwig-club/brew/openfile`
 
