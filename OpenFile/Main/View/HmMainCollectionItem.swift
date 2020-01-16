@@ -42,8 +42,12 @@ class HmMainCollectionItem: NSCollectionViewItem {
         
         rightMenu = NSMenu()
         let menuEditItem = NSMenuItem(title: "详情", action: #selector(editItem), keyEquivalent: "")
+        let menuopenFolder = NSMenuItem(title: "在 Finder 中打开", action: #selector(openFolder), keyEquivalent: "")
+        let menuCopyPath = NSMenuItem(title: "复制路径", action: #selector(copyItemPath), keyEquivalent: "")
         let menuRemoveItem = NSMenuItem(title: "删除", action: #selector(removeItem), keyEquivalent: "")
         rightMenu.addItem(menuEditItem)
+        rightMenu.addItem(menuopenFolder)
+        rightMenu.addItem(menuCopyPath)
         rightMenu.addItem(menuRemoveItem)
         
         view.menu = rightMenu
@@ -56,6 +60,18 @@ class HmMainCollectionItem: NSCollectionViewItem {
         wc.setItemDataDetail(model: self.itemModel, index: indexPathIndex)
         wc.window?.center()
         wc.showWindow(self)
+    }
+    
+    @objc
+    func openFolder() {
+        NSWorkspace.shared.selectFile(itemModel.path, inFileViewerRootedAtPath: "")
+    }
+    
+    @objc
+    func copyItemPath() {
+        let pasteboard = NSPasteboard.general
+        pasteboard.clearContents()
+        pasteboard.writeObjects([itemModel.path as NSString])
     }
     
     @objc
