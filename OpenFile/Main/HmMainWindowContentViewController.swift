@@ -104,7 +104,8 @@ extension HmMainWindowContentViewController: NSCollectionViewDataSource {
         let filePath = mainCollectionView.fileModelGroup[indexPath.item]
         item.setFilePath(model: filePath)
         item.clickButtonHandler = {
-            NSWorkspace.shared.open(URL(fileURLWithPath: filePath.path))
+            let fileUrl = URL(fileURLWithPath: filePath.path)
+            NSWorkspace.shared.open(fileUrl)
         }
         item.removeItemHandler = {
             collectionView.remove(indexPath: indexPath)
