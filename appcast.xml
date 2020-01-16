@@ -6,6 +6,22 @@
 		<description>Most recent changes with links to updates.</description>
 		<language>cn</language>
 		<item>
+			<title>1.3.3</title>
+			<description><![CDATA[<ul>
+  <li>右键菜单增加在 Finder 中打开和复制路径功能</li>
+</ul>
+]]></description>
+			<pubDate>Thu, 16 Jan 2020 01:50:18 +0000</pubDate>
+			<enclosure
+				url="https://github.com/nlnlnull/OpenFile/releases/download/V1.3.3/OpenFile.zip"
+				sparkle:version="5"
+				sparkle:shortVersionString="1.3.3"
+				type="application/octet-stream"
+				   sparkle:edSignature="JyFlGeMBt3ltjoH7EOLDWYlLsuuRxLk+PDnUE8vf1JL9B0/ZWXQ1d1D89uHq5U7H3kET264GG9oEh070E1GJCQ==" 
+				   length="6076031"
+			/>
+		</item>
+		<item>
 			<title>1.3.2</title>
 			<description><![CDATA[<ul>
   <li>解决切换屏幕唤出后，在原屏幕闪现的问题</li>
