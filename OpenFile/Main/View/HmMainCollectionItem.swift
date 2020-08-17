@@ -38,7 +38,7 @@ class HmMainCollectionItem: NSCollectionViewItem {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fileName.textColor = .textColor
+        fileName.textColor = .labelColor
         
         rightMenu = NSMenu()
         let menuEditItem = NSMenuItem(title: "详情", action: #selector(editItem), keyEquivalent: "")
